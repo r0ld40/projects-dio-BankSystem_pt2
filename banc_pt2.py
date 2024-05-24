@@ -14,9 +14,11 @@ def criarConta():
     print("\n######## CRIAR CONTA ########\n")
 
     userN = input('Digite seu nome: ')
-    cpfN = input('Digite seu CPF: ')
-    senhaN = input('Crie sua senha: ')
+    cpfN = int(input('Digite seu CPF: '))
+    senhaN = int(input('Crie sua senha: '))
+
     print('Digite abaixo seu endereco completo:\n')
+    
     cidade = input('>>> Cidade: ')
     bairro = input('>>> Bairro: ')
     rua = input('>>> Rua: ')
