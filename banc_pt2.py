@@ -5,6 +5,9 @@ user = ''
 senha = ''
 cpf = ''
 
+def listaUsers():
+    for keys, values in CONTAS_E_USUARIOS.items():
+        print(keys,values)
 
 def criarConta():
 
@@ -61,7 +64,8 @@ def perguntaMenu():
 [B] SAQUE
 [C] EXTRATO
 [D] CRIAR NOVA CONTA
-[E] SAIR
+[E] LISTAR CONTAS
+[F] SAIR
                  
 >>> """)
     
@@ -74,6 +78,8 @@ def perguntaMenu():
     elif menu == "d" or menu == "D":
         criarConta()
     elif menu == "e" or menu == "E":
+        listaUsers()
+    elif menu == "f" or menu == "F":
         sair()
     else:
         print("##### [ERRO] OPERACAO INVALIDA #####")
