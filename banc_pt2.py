@@ -18,7 +18,7 @@ def criarConta():
     senhaN = int(input('Crie sua senha: '))
 
     print('Digite abaixo seu endereco completo:\n')
-    
+
     cidade = input('>>> Cidade: ')
     bairro = input('>>> Bairro: ')
     rua = input('>>> Rua: ')
@@ -103,8 +103,8 @@ def perguntaUsuario():
         print("\n######## INICIO ########\n")
 
         user = str(input('Digite seu nome: '))
-        cpf = str(input('Digite seu CPF: '))
-        senha = str(input('Digite sua senha: '))
+        cpf = int(input('Digite seu CPF: '))
+        senha = int(input('Digite sua senha: '))
 
         if user in CONTAS_E_USUARIOS and CONTAS_E_USUARIOS[user]['CPF'] == cpf and CONTAS_E_USUARIOS[user]['senha'] == senha:
             perguntaMenu()
