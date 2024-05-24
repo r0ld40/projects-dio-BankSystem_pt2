@@ -16,11 +16,17 @@ def criarConta():
     userN = input('Digite seu nome: ')
     cpfN = input('Digite seu CPF: ')
     senhaN = input('Crie sua senha: ')
+    print('Digite abaixo seu endereco completo:\n')
+    cidade = input('>>> Cidade: ')
+    bairro = input('>>> Bairro: ')
+    rua = input('>>> Rua: ')
+    numero = input('>>> Numero: ')
+
 
     if cpfN in (conta['CPF'] for conta in CONTAS_E_USUARIOS.values()) or senhaN in (conta['senha'] for conta in CONTAS_E_USUARIOS.values()):
         print('\n[ERRO] Usuário ou dados já cadastrados.')  
     else:
-        CONTAS_E_USUARIOS[userN] = {'CPF': cpfN, 'senha': senhaN, 'dados': {'saldo': 0, 'extrato': [], 'num_saques': 0}}
+        CONTAS_E_USUARIOS[userN] = {'CPF': cpfN, 'senha': senhaN, 'dados': {'saldo': 0, 'extrato': [], 'num_saques': 0}, 'endereco': {'cidade': cidade, 'bairro': bairro, 'rua': rua, 'numero': numero}}
 
     print("\n######## VOLTANDO AO INÍCIO ########\n")
 
