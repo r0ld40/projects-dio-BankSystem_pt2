@@ -1,8 +1,4 @@
-# Sobre esse projeto -> Foi feito usando POO (programação orientada a objetos), este projeto foi desenvolvido com base na parte 2 do sistema bancario, sendo adicionado apenas a separação dos codigos em: aplicação e sistema do banco.
- 
- 
- 
- # Olá, eu sou o João! 
+# Olá, eu sou o João! 
 
 
 ## 🚀 Sobre mim
